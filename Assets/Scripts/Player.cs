@@ -25,6 +25,11 @@ public class Player : MonoBehaviour {
 
     public Animator anim;
 
+    [Space]
+    [Header("Chaves")]
+    public bool Chave_1 = false;
+    public bool Chave_2 = false;
+    public bool Chave_3 = false;
 
     [Space]
     [Header("Particulas")]
@@ -53,6 +58,31 @@ public class Player : MonoBehaviour {
     public bool inFury = false;
 
     public bool playerInShop = false;
+
+    public void PegarChave_1(){
+        Chave_1 = true;
+    }
+    public void PegarChave_2()
+    {
+        Chave_2 = true;
+    }
+    public void PegarChave_3()
+    {
+        Chave_3 = true;
+    }
+
+    public bool GetChave_1() {
+    
+       return Chave_1;
+    }
+    public bool GetChave_2() { 
+    
+        return Chave_2;
+    }
+    public bool GetChave_3() { 
+    
+        return Chave_3;
+    }
 
     public bool GetplayerInShop(){
         return playerInShop;
@@ -209,15 +239,41 @@ public class Player : MonoBehaviour {
         }
     }
     public void Morrer(){
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        Cursor.lockState = CursorLockMode.Confined;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("PlayerMorte");
 
     }
+
+    public void VencerOJogo() {
+        Cursor.lockState = CursorLockMode.Confined;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Player Vitoria");
+    }
+
     public void RemoveMoedas(int i){
         moedas -= i;
     }
     public int GetMoedas()
     {
         return moedas;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Chave_City") {
+            PegarChave_1();
+            Destroy(other);
+        }
+        if (other.tag == "Chave_Fab")
+        {
+            PegarChave_2();
+            Destroy(other);
+        }
+        if (other.tag == "Chave_Lab")
+        {
+            PegarChave_3();
+            Destroy(other);
+        }
     }
 }
 

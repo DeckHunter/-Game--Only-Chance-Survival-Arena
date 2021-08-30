@@ -11,6 +11,8 @@ public class Vendedora : MonoBehaviour
     public Player player;
     public FirstPersonCamera firstPerson;
 
+    public GameObject Aviso;
+
     [Space]
     [Header("Pistolas")]
     public Gun_1 Pistola_Dir;
@@ -148,6 +150,7 @@ public class Vendedora : MonoBehaviour
         if (other.tag == "Player")
         {
             isPress = true;
+            Aviso.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -155,6 +158,7 @@ public class Vendedora : MonoBehaviour
         if (other.tag == "Player")
         {
             isPress = false;
+            Aviso.SetActive(false);
 
         }
     }

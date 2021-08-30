@@ -12,7 +12,6 @@ public class Boss : MonoBehaviour
 
     public Slider life_bar;
     public GameObject life_bar_;
-
    
     public float GetLife()
     {

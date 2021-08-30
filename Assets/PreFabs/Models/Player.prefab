@@ -894,10 +894,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e01d042dd9271d4693dfb67fa7d9dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 5633138535757001103}
+  Chave_1: 0
+  Chave_2: 0
+  Chave_3: 0
+  isHealing: {fileID: 0}
+  isFurious: {fileID: 0}
+  Qtd_Moedas: {fileID: 0}
+  Qtd_Kits: {fileID: 0}
   lifeBar: {fileID: 0}
   furyBar: {fileID: 0}
+  armorBar: {fileID: 0}
   inFury: 0
-  anim: {fileID: 5633138535757001103}
+  playerInShop: 0
 --- !u!1 &1600489781519584238
 GameObject:
   m_ObjectHideFlags: 0

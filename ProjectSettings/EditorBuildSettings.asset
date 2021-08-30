@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 1c5d80bb751f99b4688755d9626995f0
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 370ff722b5ecc584fa7db3b6aefa29fa
+  - enabled: 1
+    path: Assets/Scenes/Player Vitoria.unity
+    guid: 5a7c287e2ba1fbd4588222dc74ed723b
+  - enabled: 1
+    path: Assets/Scenes/PlayerMorte.unity
+    guid: 0d3332dc264160f448e1a212e410bf23
   m_configObjects: {}

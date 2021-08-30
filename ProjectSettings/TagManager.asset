@@ -10,6 +10,9 @@ TagManager:
   - Coin
   - Vendedora
   - Boss
+  - Chave_Fab
+  - Chave_Lab
+  - Chave_City
   layers:
   - Default
   - TransparentFX

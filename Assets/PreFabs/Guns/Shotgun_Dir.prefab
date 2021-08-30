@@ -194,13 +194,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  range: 10
+  range: 40
   firerate: 15
   waitToFireRate: 0
   cam: {fileID: 0}
   hold: 0
   maxAmmonInPaint: 2
-  Ammo: 12
+  Ammo: 40
   AmmoInPaint: 2
   TimeReload: 10
   ammo_Gun_1: {fileID: 0}
